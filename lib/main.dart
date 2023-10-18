@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'views/splash_screen/splash_screen.dart';
+import 'package:login_app/views/login/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Lato',
+        primarySwatch: Colors.deepPurple,
+        brightness: Brightness.light,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      // darkTheme: ThemeData(
+      //   fontFamily: 'Lato',
+      //     primarySwatch: Colors.deepPurple, brightness: Brightness.dark),
+      home: LoginScreen(),
     );
   }
 }
-
