@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                       fontFamily: 'Lato'),
                 ),
                 SizedBox(
-                  height: ph * 0.1,
+                  height: ph * 0.06,
                 ),
                 CustomTextfieldWidget(
                     hinttext: 'Email', leadingIcon: Icon(Icons.email)),
@@ -55,7 +55,9 @@ class LoginScreen extends StatelessWidget {
                   height: ph * 0.01,
                 ),
                 CustomTextfieldWidget(
-                    hinttext: 'Password', leadingIcon: Icon(Icons.password)),
+                    hinttext: 'Password',
+                    leadingIcon: Icon(Icons.password),
+                    isPassword: true),
                 SizedBox(
                   height: ph * 0.02,
                 ),

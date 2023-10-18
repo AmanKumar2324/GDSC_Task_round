@@ -36,7 +36,7 @@ class CreateAccountScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: ph * 0.1,
+                    height: ph * 0.05,
                   ),
                   Text(
                     'Create\nAccount',
@@ -60,7 +60,18 @@ class CreateAccountScreen extends StatelessWidget {
                     height: ph * 0.01,
                   ),
                   CustomTextfieldWidget(
-                      hinttext: 'Password', leadingIcon: Icon(Icons.password)),
+                    hinttext: 'Password',
+                    leadingIcon: Icon(Icons.password),
+                    isPassword: true,
+                  ),
+                  SizedBox(
+                    height: ph * 0.01,
+                  ),
+                  CustomTextfieldWidget(
+                    hinttext: 'Confirm Password',
+                    leadingIcon: Icon(Icons.password),
+                    isPassword: true,
+                  ),
                   SizedBox(
                     height: ph * 0.05,
                   ),
@@ -131,7 +142,7 @@ class CreateAccountScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: ph * 0.15,
+                    height: ph * 0.05,
                   ),
                   Center(
                     child: Container(
